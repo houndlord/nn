@@ -1,0 +1,44 @@
+class Weights:
+    def __init__(self, neurons_num):
+        self.neurons_num = neurons_num
+        self.weights = np.ones(neurons_num)
+        
+    def initialize_weights(neurons_num):
+        return Weights(neurons_num)
+    
+class activation_function:
+    
+    @staticmethod
+    def sigmoid(input):
+        return math.e ** input / math.e ** input +1
+
+class Layer:
+    def __init__(self, n_neurons):
+        self.n_neurons = n_neurons
+        self.weights = weights
+    
+    def forward(X):
+        return X * weights * activation_function
+    
+
+
+class ReLu(Layer):
+    def __init__(self, n_neurons):
+        Layer.__init__(self, n_neurons)
+    
+    def forward(self, X, batch_size):
+        pass
+    
+    def backward(self, X, batch_size):
+        pass
+    
+class Dense(Layer):
+    def __init__(self, n_neurons):
+        Layer.__init__(self, n_neurons)
+    
+    def forward(self, X, batch_size):
+        pass
+    
+    def backward(self, X, batch_size):
+        pass
+    
